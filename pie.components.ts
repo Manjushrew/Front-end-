@@ -15,8 +15,9 @@ export class PieChartComponent implements OnInit  {
   public pieChartLabels: Label[] = [['Latitude'], ['Longtitude']];
   public pieChartData: SingleDataSet = [300, 500, 100];
   public pieChartType: ChartType = 'pie';
+  colors: any={'gray','purple','red'];
   public pieChartLegend = true;
-  public pieChartPlugins = [];
+  pieChartColors: any;
 
   constructor() {
     monkeyPatchChartJsTooltip();
@@ -24,5 +25,10 @@ export class PieChartComponent implements OnInit  {
   }
 
   ngOnInit() {
+    this.makeChartData();
   }
+  makeChartData()
+  {
+    this.pieChartColors= [{backgroundColor: this.colors }];
+    this.data
 }
