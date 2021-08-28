@@ -7,7 +7,7 @@ import { SingleDataSet, Label, monkeyPatchChartJsLegend, monkeyPatchChartJsToolt
   templateUrl: './pie component.html',
   styleUrls: [ './pie component.css' ]
 })
-export class AppComponent  {
+export class PieChartComponent implements OnInit  {
   // Pie
   public pieChartOptions: ChartOptions = {
     responsive: true,
