@@ -12,8 +12,8 @@ export class PieChartComponent implements OnInit  {
   public pieChartOptions: ChartOptions = {
     responsive: true,
   };
-  public pieChartLabels: Label[] = [['Latitude'], ['Longtitude']];
-  public pieChartData: SingleDataSet = [300, 500, 100];
+  public pieChartLabels: string[];
+  public pieChartData: number[];
   public pieChartType: ChartType = 'pie';
   colors: any={'gray','purple','red'];
   public pieChartLegend = true;
@@ -30,5 +30,7 @@ export class PieChartComponent implements OnInit  {
   makeChartData()
   {
     this.pieChartColors= [{backgroundColor: this.colors }];
-    this.data
+    this.data=[1000,3000]
+    this.labels=["latitude", "longtitude"]
+   }
 }
