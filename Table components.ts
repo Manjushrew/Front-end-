@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
 
   columns = ["S NO", "Name", "User Name", "city", "pincode", "company name"];
 
-  index = ["id", "Name", "User Name", "city", "pincode", "company name"];
+  index = ["01", "Manjushree", "mannju", "hassan", "573211", "origa.ai"];
 
   users : Users[] = [];
 
